@@ -1,0 +1,11 @@
+.divMain{
+  width:950px;
+  border-radius: 5px;
+  background-color: khaki;
+  margin-left: auto;
+  margin-right: auto;
+}
+h2{
+  padding-left: 20px;
+  padding-top: 10px;
+}
