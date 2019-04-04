@@ -15,6 +15,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { FavouriteComponent } from './pages/favourite/favourite.component';
+
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { ContactListComponent } from './contacts/contact-list/contact-list.component';
 import { RegisterComponent } from './pages/register/register.component';
@@ -29,6 +31,9 @@ import { JwtModule, JwtHelperService, JwtInterceptor } from '@auth0/angular-jwt'
 
 // Route Guards
 import { AuthGuard } from './guards/auth.guard';
+
+import { from } from 'rxjs';
+
 
 export function jwtTokenGetter() {
   return localStorage.getItem('id_token');
@@ -50,7 +55,8 @@ export function jwtTokenGetter() {
     RegisterComponent,
     LoginComponent,
     ContactDetailsComponent,
-    ContactDeleteComponent
+    ContactDeleteComponent,
+    FavouriteComponent,
   ],
   imports: [
     BrowserModule,

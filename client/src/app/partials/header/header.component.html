@@ -41,8 +41,14 @@
         >
       </li>
 
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/favourite"
+          ><i class="fa fa-lg fa-heart"></i> My Favourite</a
+        >
+      </li>
 
-        <li *ngIf="isLoggedIn()" class="navbar-text text-success ml-5 mr-5 d-none d-lg-inline"><i class="fas fa-lg fa-user"></i>
+
+      <li *ngIf="isLoggedIn()" class="navbar-text text-success ml-5 mr-5 d-none d-lg-inline"><i class="fas fa-lg fa-user"></i>
           Welcome, {{ user.displayName }}</li>
 
         <li *ngIf="isLoggedIn()" class="nav-item"><a (click)="onLogoutClick()" routerLink="/logout" class="nav-link">
