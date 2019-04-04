@@ -1,5 +1,7 @@
 let express = require('express');
 let router = express.Router();
+let jwt = require('jsonwebtoken');
+
 //for using mongo
 let mongoose = require('mongoose');
 
@@ -17,22 +19,21 @@ function requiredAuth(req, res, next){
     next();
   }
 
-
-router.get('/',requiredAuth, favouriteController.displayFavouriteList);
+router.get('/', passport.authenticate('jwt',{session:false}),favouriteController.displayFavouriteList );
 
 // GET route for the add page
-router.get('/add',requiredAuth, favouriteController.displayAddFavourits);
+router.get('/add', passport.authenticate('jwt',{session:false}), favouriteController.displayAddFavourits);
 
 /*Post Route processing the add*/
-router.post('/add', favouriteController.processAddFavouritList);
+router.post('/add',passport.authenticate('jwt',{session:false}), favouriteController.processAddFavouritList);
 
 /*GET request display EDIT page */
-router.get('/edit/:id', requiredAuth, favouriteController.displayEditPage);
+router.get('/edit/:id',passport.authenticate('jwt',{session:false}), favouriteController.displayEditPage);
 
 /* POST request to update the DB with data from Edit page */
-router.post('/edit/:id',requiredAuth, favouriteController.proccessEditPage);
+router.post('/edit/:id',passport.authenticate('jwt',{session:false}), favouriteController.proccessEditPage);
 
 /**GET request to perform the delete action */
-router.get('/delete/:id',requiredAuth, favouriteController.performDelete);
+router.get('/delete/:id',passport.authenticate('jwt',{session:false}), favouriteController.performDelete);
 
 module.exports = router;
