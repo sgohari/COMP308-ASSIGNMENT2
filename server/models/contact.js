@@ -7,7 +7,7 @@ let contactSchema = mongoose.Schema({
     age: Number
 },
 {
-    collection: "first"
+    collection: "favourites"
 });
 
 module.exports = mongoose.model('contact', contactSchema);
