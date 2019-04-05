@@ -15,7 +15,6 @@ import { AboutComponent } from './pages/about/about.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { FavouriteComponent } from './pages/favourite/favourite.component';
 
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { ContactListComponent } from './contacts/contact-list/contact-list.component';
@@ -33,9 +32,6 @@ import { JwtModule, JwtHelperService, JwtInterceptor } from '@auth0/angular-jwt'
 import { AuthGuard } from './guards/auth.guard';
 
 import { from } from 'rxjs';
-import { FavouriteListComponent } from './favourites/favourite-list/favourite-list.component';
-import { FavouriteDetailsComponent } from './favourites/favourite-details/favourite-details.component';
-import { FavouriteDeleteComponent } from './favourites/favourite-delete/favourite-delete.component';
 
 
 export function jwtTokenGetter() {
@@ -59,10 +55,7 @@ export function jwtTokenGetter() {
     LoginComponent,
     ContactDetailsComponent,
     ContactDeleteComponent,
-    FavouriteComponent,
-    FavouriteListComponent,
-    FavouriteDetailsComponent,
-    FavouriteDeleteComponent,
+
   ],
   imports: [
     BrowserModule,

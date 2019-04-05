@@ -1,3 +1,10 @@
+/*Student Name: Syed Nasir Gohary
+Student ID: 300937424
+Description: Assignment2
+Date: 04/05,2019
+Reference: Tom Tsiliopoulos's Class Demo, Github Repo's
+All codes are taken from Tom Tsiliopoulos's classes and demos
+ */
 import { Component, OnInit } from '@angular/core';
 import { ContactListService } from 'src/app/services/contact-list.service';
 import { FlashMessagesService } from 'angular2-flash-messages';

@@ -1,3 +1,10 @@
+/*Student Name: Syed Nasir Gohary
+Student ID: 300937424
+Description: Assignment2
+Date: 04/05,2019
+Reference: Tom Tsiliopoulos's Class Demo, Github Repo's
+All codes are taken from Tom Tsiliopoulos's classes and demos
+ */
 import { Component, OnInit } from '@angular/core';
 import { ContactListService } from 'src/app/services/contact-list.service';
 import { FlashMessagesService } from 'angular2-flash-messages';
@@ -26,15 +33,14 @@ export class ContactListComponent implements OnInit {
   }
 
   private onDeleteClick(): void {
-    if(!confirm('Are You Sure?')) {
+    if (!confirm('Are You Sure?')) {
       this.router.navigate(['/contact/contact-list']);
     }
   }
 
   displayContactList(): void {
     this.contactListService.getList().subscribe(data => {
-      if(data.success) {
-        //this.contacts = data.contactList;
+      if (data.success) {
         this.contacts = data.contactList;
       } else {
         this.flashMessage.show('User must be logged-in', {cssClass: 'alert-danger', timeOut: 3000});

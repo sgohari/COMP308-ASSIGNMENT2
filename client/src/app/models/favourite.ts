@@ -1,7 +1,8 @@
 export class Favourite {
+    // tslint:disable-next-line:variable-name
   _id: string;
-  FirstName: string;
-  LastName: string;
-  FavouriteVehicle: string;
-  FavouriteSport: string;
+  firstName: string;
+  lastName: string;
+  favouriteVehicle: string;
+  favouriteSport: string;
 }

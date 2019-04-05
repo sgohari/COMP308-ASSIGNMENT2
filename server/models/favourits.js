@@ -2,10 +2,10 @@ let mongoose = require('mongoose');
 
 //create a model class
 let favouriteSchema = mongoose.Schema({
-    FirstName: String,
-    LastName:String,
-    FavouriteVehicle:String,
-    FavouriteSport: String
+    firstName: String,
+    lastName:String,
+    favouriteVehicle:String,
+    favouriteSport: String
     },
 
     {
@@ -14,4 +14,4 @@ let favouriteSchema = mongoose.Schema({
 
 
     
-    module.exports=mongoose.model('favourite', favouriteSchema);
+    module.exports=mongoose.model('favourites', favouriteSchema);
