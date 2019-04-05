@@ -34,6 +34,8 @@ import { AuthGuard } from './guards/auth.guard';
 
 import { from } from 'rxjs';
 import { FavouriteListComponent } from './favourites/favourite-list/favourite-list.component';
+import { FavouriteDetailsComponent } from './favourites/favourite-details/favourite-details.component';
+import { FavouriteDeleteComponent } from './favourites/favourite-delete/favourite-delete.component';
 
 
 export function jwtTokenGetter() {
@@ -59,6 +61,8 @@ export function jwtTokenGetter() {
     ContactDeleteComponent,
     FavouriteComponent,
     FavouriteListComponent,
+    FavouriteDetailsComponent,
+    FavouriteDeleteComponent,
   ],
   imports: [
     BrowserModule,
