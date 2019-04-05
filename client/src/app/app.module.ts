@@ -33,6 +33,7 @@ import { JwtModule, JwtHelperService, JwtInterceptor } from '@auth0/angular-jwt'
 import { AuthGuard } from './guards/auth.guard';
 
 import { from } from 'rxjs';
+import { FavouriteListComponent } from './favourites/favourite-list/favourite-list.component';
 
 
 export function jwtTokenGetter() {
@@ -57,6 +58,7 @@ export function jwtTokenGetter() {
     ContactDetailsComponent,
     ContactDeleteComponent,
     FavouriteComponent,
+    FavouriteListComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,7 @@
 export class Favourite {
   _id: string;
-  firstName: string;
-  lastName: string;
-  favouriteVehicle: string;
-  favouriteSport: string;
-  favouriteBook: string;
+  FirstName: string;
+  LastName: string;
+  FavouriteVehicle: string;
+  FavouriteSport: string;
 }

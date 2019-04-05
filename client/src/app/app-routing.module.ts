@@ -17,6 +17,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AuthGuard } from './guards/auth.guard';
 import { from } from 'rxjs';
+import { FavouriteListComponent } from './favourites/favourite-list/favourite-list.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent, data: {title: 'Home'}},
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path: 'services', component: ServicesComponent, data: {title: 'Services'}},
   {path: 'contact', component: ContactComponent, data: {title: 'Contact'}},
   {path: 'favourite', component: FavouriteComponent, data:{title: 'Favourite'}},
+  {path: 'favourite/favourite-list', component: FavouriteListComponent, data:{title: 'Favourite List'}},
 
   {path: 'contact/contact-list', component: ContactListComponent, data: {title: 'Contact List'}, canActivate: [AuthGuard]},
   {path: 'contact/contact-list/add', component: ContactDetailsComponent, data: {title: 'Add Contact'}, canActivate: [AuthGuard]},

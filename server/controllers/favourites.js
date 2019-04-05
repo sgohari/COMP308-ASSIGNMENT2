@@ -28,7 +28,9 @@ module.exports.processAddFavouritList =(req, res, next)=>{
     let newFavourites = myFavourit({
         "FirstName": req.body.firstName,
         "LastName": req.body.lastName,
-        "Age": req.body.age
+        "FavouriteVehicle": req.body.favouriteVehicle,
+        "FavouriteSport": req.body.favouriteSport
+
     });
     
     myFavourit.create(newFavourites, (err, myFavourit)=>{
@@ -72,7 +74,8 @@ module.exports.proccessEditPage=(req, res, next)=>{
         "_id": id,
         "FirstName": req.body.firstName,
         "LastName": req.body.lastName,
-        "Age":req.body.age
+        "FavouriteVehicle": req.body.favouriteVehicle,
+        "FavouriteSport": req.body.favouriteSport
     });
 
     myFavourit.update({ _id:id }, updateDB, (err)=>{
