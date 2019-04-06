@@ -17,15 +17,17 @@ Some of the content are taken from Week10 Demo--->
 </div>
 
 <h3>Only registered user can view contact list</h3>
+<div id="contacts">
 <div *ngIf="isLoggedIn()" class="container">
   <div class="row">
     <div class="col col-md-6">
       <div class="card">
-        <h5 class="card-header alert-success">Secure</h5>
+        <h5 class="card-header alert-success">Protected Area</h5>
         <div class="card-body">
           <a routerLink="contact-list" class="btn btn-primary"><i class="fas fa-users fa-lg"></i> Contact List</a>
         </div>
       </div>
     </div>
   </div>
+</div>
 </div>

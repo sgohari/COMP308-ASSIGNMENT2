@@ -1,23 +1,14 @@
-/*
-Student Name: Syed Nasir Gohary
-Student ID: 300937424
-Description: Assignment2
-Date: 04/05,2019
-Reference: Tom Tsiliopoulos's Class Demo, Github Repo's
-All codes are taken from Tom Tsiliopoulos's classes and demos
-*/
-
-#loginForm {
-  width:600px;
+#login {
+  width:450px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 3em;
-
-  /*set to a negative number 1/2 of your width*/
-  border: 2.5px ridge coral;
+   /*set to a negative number 1/2 of your width*/
+  border: 2.5px ridge rgb(119, 190, 228);;
   border-radius: 5px;
-  background-color: #f3f3f3;
+  background-color: #70f870;
+
 }
 h4{
   padding-top: 10px;
@@ -27,11 +18,14 @@ h4{
 h1{
   text-align: center;
   padding-top: 5px;
+  text-transform: uppercase;
+  padding-top: 10px;
 }
 fieldset{
-  padding: 10px;
+  padding: 20px;
   margin-right: auto;
   margin-left: auto;
+  width: 400px;
 
 }
 
@@ -39,4 +33,37 @@ label{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   font-kerning: 18px;
+
+}
+#btnLogin{
+
+  padding: 10px 10px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(199, 193, 193);
+  width: 150px;
+  text-transform: uppercase;
+  font-weight: bold;
+  float: left;
+  background-color: gray;
+
+}
+#btnCancel{
+  padding: 10px 10px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(199, 193, 193);
+  width: 150px;
+  text-transform: uppercase;
+  font-weight: bold;
+  float: right;
+  background-color: khaki;
 }

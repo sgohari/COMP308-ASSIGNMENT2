@@ -1,7 +1,8 @@
-<main class="container">
+<div id="registration">
+    <h1>Please Register</h1>
   <div class="row">
       <div class="col-md-offset-4 col-md-4">
-          <h1>Please Register</h1>
+
           <form autocomplete="off" (submit)="onRegisterSubmit()">
               <fieldset class="form-group">
                   <label for="username">Username:</label>
@@ -32,12 +33,12 @@
                   id="displayName" required autocomplete="off">
               </fieldset>
               <fieldset class="form-group text-right">
-                  <input type="submit" class="btn btn-success" value="Register">
+                  <input type="submit" class="btn btn-success" value="Register" id="btnSubmit">
                   <a routerLink="/home">
-                      <input type="button" class="btn btn-warning" value="Cancel">
+                      <input type="button" class="btn btn-warning" value="Cancel" id="btnCancel">
                   </a>
               </fieldset>
           </form>
       </div>
   </div>
-</main>
+</div>
