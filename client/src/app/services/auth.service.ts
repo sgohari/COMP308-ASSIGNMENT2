@@ -10,7 +10,7 @@ import { User } from '../models/user';
 export class AuthService {
   user: User;
   private authToken: any;
-
+  // reference to endpoint
   private endpoint = 'https://comp308-w19-assignment2.herokuapp.com/api/';
 
   private httpOptions = {
